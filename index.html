@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>简历生成器</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script>
+    <script src="static/js/script.js"></script>
+</head>
+
+<body>
+    <div class="container" id="cv">
+        <div class="side">
+            <div class="me">
+                <div class="portrait"></div>
+                <div class="remodal remodal-img" data-remodal-id="portrait-modal">
+                    <h3>请输入图片URL地址：</h3>
+                    <br/>
+                    <input type="text" id="avatar-url">
+                    <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+                </div>
+                <h1 id="username" >A.wangkai</h1>
+                <h4 id="persona-tag" >Python / CV / ML / 数据分析 </h4>
+            </div>
+            <div class="profile info-unit">
+                <h2 class="info-header"><i class="iconfont icon-person"></i> <span class="info-title">基本信息</span></h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label">姓名</label><span class="label-value">wangkai</span></li>
+                    <li>
+                        <label class="left-label">学历</label><span class="label-value">硕士</span></li>
+                    <li>
+                        <label class="left-label">毕业院校</label><span class="label-value">辽宁师范大学</span></li>
+                    <li>
+                        <label class="left-label">毕业年份</label><span class="label-value">2017</span></li>
+                </ul>
+            </div>
+            <div class="contact info-unit">
+                <h2 class="info-header"><i class="iconfont icon-call"></i> <span class="info-title">联系方式</span></h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label">email</label><span class="label-value">wangkai001_tg@163.com</span></li>
+                    <li>
+                        <label class="left-label">个人主页</label><span class="label-value">exit-tixe.me</span></li>
+                    <li>
+                        <label class="left-label">Github</label><span class="label-value">https://github.com/wangkailovebaojiakun</span></li>
+                </ul>
+            </div>
+            <div class="skill info-unit">
+                <h2 class="info-header"><i class="iconfont icon-star"></i> <span class="info-title">技能点</span></h2>
+                <hr>
+                <ul class="progress-list">
+                    <li>
+                        <label class="left-label">Python</label>
+                        <progress value="80" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">OpenCV</label>
+                        <progress value="70" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">Matlab</label>
+                        <progress value="60" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">机器学习</label>
+                        <progress value="60" max="100"></progress>
+                    </li>
+                </ul>
+            </div>
+            <div class="stack info-unit">
+                <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title">技术堆</span></h2>
+                <hr>
+                <ul class="stack-list">
+                    <li>
+                        <label class="left-label">语言</label><span class="label-value">C\C++、Python、Matlab，shell</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">工具</label><span class="label-value">OpenCV、Linux、Flask、Django、MySQL</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">算法</label><span class="label-value">RBT、Hog、LBP、SVM、K-means、BPNN、CNN、AG、etc...</span></li>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="code info-unit">
+                <h2 class="info-header"><i class="iconfont icon-weixin"></i> <span class="info-title">个人微信</span></h2>
+                <hr>
+                <div class="weixin">
+                    <img src="static/image/weixin.png" alt="">
+
+                </div>
+            </div>
+            <div class="remodal remodal-img" data-remodal-id="weixin-modal">
+                <h3>请输入图片URL地址：</h3>
+                <br/>
+                <input type="text" id="weixin-url">
+                <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="education info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-education"></i> <span class="info-title">教育经历</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>辽宁师范大学 - 计算机科学与技术专业（本科）2009-2013</h3>
+                        <p>
+                            学习计算机相关，具有计算机系统、软件、嵌入式、数据库、网路、高等数学基础，英语通过四级考试，自学日语。
+	                </p>
+                    </li>
+                </ul>
+                <hr>
+		<ul class="experience-list">
+                    <li>
+                        <h3>辽宁师范大学 - 计算机科学与技术专业（硕士）2013-2016</h3>
+                        <p>
+                            研究生期间学习数字图像视频多媒体处理技术，了解视频图像编解码基础，主要研究方向是计算机视觉，课题是基于交通场景的图像视频数字处理技术，毕业论文是《基于交通场景的车辆运动阴影检测与车牌阴影去除方法》提出一种基于小波的运动车辆与阴影检测方法和基于k-means的车牌二值化方法，导师是王向海教授。
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="work info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title">工作经历</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>北京泛游创想大连公司－实习生（实习）2009.3-2009-9</h3>
+                        <p>
+                           手机游戏开发，学习python，django，cocos2d-x，mysql和基于linux环境下的开发，利用html5,backbone，django框架开发一款手机网页游戏，利用cocos2d-x开发一款ios下的猜图游戏。   
+                        </p>
+                    </li>
+                    <li>
+                        <h3>大连维的集成电路（全职）2013.6-至今</h3>
+                        <p>
+                           图像算法工程师
+                        </p>
+                    </li>
+                </ul class="experience-list">
+            </div>
+            <div class="project info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title">个人项目</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>基于cocos2d-x的山寨疯狂猜图</h3>
+                        <p>
+                            <br/>
+                        </p>
+                    </li>
+
+                    <li>
+                        <h3>基于交通场景的阴影检测方法</h3>
+                        <p>采用零树小波掩码，利用父子系数之间的相关特性，对差分图像进行分析，检测和去除车辆运动投影。
+                            <br/>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>基于 Flask 的视频监控小车</h3>
+                        <p> 用树莓派和直流电机以及视频摄像头和传感器搭建的一个视频监控小车，采用udp协议和flask进行视频传输，实现远程监控
+                            <br/>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>工业包装检测项目 </h3>
+                        <p>
+			   保密
+                        </p>
+                    </li>
+                    <li>
+                        <h3>交通场景货物检测项目 </h3>
+                        <p>保密
+                            <br/>
+                        </p>
+                    </li>
+
+                    <li>
+                        <h3>工业场景产品检测项目 </h3>
+                        <p>保密
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="trophy info-unit">
+                <h2 class="info-header"><i class="iconfont icon-trophy"></i> <span class="info-title">奖项与证书</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>小学生作文二等奖</h3>
+                        <p>
+		            我小学的时候是得过一个全市二等奖，曾经一度以为自己会成为作家，02年的时候我构思过一篇文章，打算写一篇长篇小说，开头设定是经过某次意外后进入神秘黑暗空间与神秘声音对话，一觉醒后发现自己回到某个朝代有着特异功能云云，刚刚构想一个开头但是课业繁重没有写成，若干年后当我升入高中，发现有人和我有着同样的想法并且写成全书，好像这种小说叫穿越玄幻什么的，而且放在网络上大热。
+                        </p>
+                    </li> 
+            </div>
+            <div class="aboutme info-unit right-paragraph">
+                <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title">自我评价</span></h2>
+                <hr>
+                <p>
+		   乐观开朗，深沉内敛，静如处子，动若脱兔，有理想，有追求，肯学习，爱学习，信仰人生而为改变世界，希望通过科技的力量为人类的发展作出自己最大的贡献。
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
